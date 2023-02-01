@@ -1,14 +1,39 @@
 import React from 'react'
-import {NavbarContainer, LeftContainer, RightContainer, NavbarExtendedContainer, NavbarInnerContainer} from './Navbar.style'
+import {NavbarContainer, LeftContainer, RightContainer, 
+    NavbarExtendedContainer, NavbarInnerContainer, NavbarLinkContainer,
+     NavbarLink, NavbarLinkRight, Logo, NavbarLinkPortal} from './Navbar.style'
+import LogoImage from '../assets/taskmate-1.png'
 
 function Navbar() {
   return (
     
   <>
    <NavbarContainer>
-    {""}
-    <LeftContainer></LeftContainer>
-    <RightContainer></RightContainer>
+        <NavbarInnerContainer>
+
+            <LeftContainer>
+                <NavbarLinkContainer>
+
+                   <NavbarLink to="/">
+                    <Logo src={LogoImage}></Logo>
+                    </NavbarLink>
+
+                    <NavbarLinkPortal to="/companyportal">Company Portal</NavbarLinkPortal>
+                    <NavbarLinkPortal to="/studentportal">Student Portal</NavbarLinkPortal>
+                    </NavbarLinkContainer>
+            </LeftContainer>
+
+            <RightContainer>
+                <NavbarLinkContainer> 
+                    <NavbarLinkRight to="/signup">Sign Up</NavbarLinkRight>
+                    <NavbarLinkRight to="/login">Login</NavbarLinkRight>
+                </NavbarLinkContainer>
+            </RightContainer>
+
+        </NavbarInnerContainer>
+
+        <NavbarExtendedContainer></NavbarExtendedContainer>
+
    </NavbarContainer>
 </>
   )
