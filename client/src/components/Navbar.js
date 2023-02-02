@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavbarContainer, LeftContainer, RightContainer, 
     NavbarExtendedContainer, NavbarInnerContainer, NavbarLinkContainer,
-     NavbarLink, NavbarLinkRight, Logo, NavbarLinkPortal} from './Navbar.style'
+     NavbarLink, NavbarLinkRight, Logo, NavbarLinkPortal} from '../styles/Navbar.style'
 import LogoImage from '../assets/taskmate-1.png'
 
 function Navbar() {

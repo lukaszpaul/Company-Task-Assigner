@@ -42,6 +42,7 @@ display: flex;
 export const NavbarLink = styled(Link)`
 text-decoration: none;
 margin-left: 5px;
+
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -52,6 +53,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 export const NavbarLinkRight = styled(Link)`
 text-decoration: none;
+
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
