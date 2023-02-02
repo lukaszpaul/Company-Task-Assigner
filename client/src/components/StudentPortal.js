@@ -6,4 +6,4 @@ function StudentPortal() {
   )
 }
 
-export default StudentPortal
+export default StudentPortal;

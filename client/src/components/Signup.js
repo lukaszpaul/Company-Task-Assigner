@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {SignupContainer, SignupText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton}  from '../styles/Signup.style'
+import fire from '../Firebase'
 
 function Signup() {
+
+ 
+
+
   return (
-    
+
         <SignupContainer>
 
           

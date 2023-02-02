@@ -8,7 +8,6 @@ import StudentPortal from './components/StudentPortal';
 import CompanyPortal from './components/CompanyPortal';
 
 
-
 function App() {
   return (
     <>
