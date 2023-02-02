@@ -1,12 +1,9 @@
-import React, {useState, useEffect} from 'react'
-import {SignupContainer, SignupText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton}  from '../styles/Signup.style'
-import fire from '../Firebase'
+import React from 'react'
+import {SignupContainer, SignupText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton, OptionDrop, CompanyText}  from '../styles/Signup.style'
 
 function Signup() {
   return (
-
         <SignupContainer>
-
           
                <SignupText>Sign Up</SignupText> 
                 <EmailText>Email: </EmailText>
@@ -26,9 +23,7 @@ function Signup() {
 
                 <SubmitButton>Register</SubmitButton>
             
-           
         </SignupContainer>
-     
   )
 }
 

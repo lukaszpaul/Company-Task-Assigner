@@ -6,4 +6,4 @@ function CompanyPortal() {
   )
 }
 
-export default CompanyPortal
+export default CompanyPortal;
