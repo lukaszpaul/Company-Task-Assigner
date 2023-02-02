@@ -4,7 +4,7 @@ export const SignupContainer = styled.div`
 
 margin: auto;
 width: 323px;
-height: 353px;
+height: 390px;
 left: 473px;
 top: 218px;
 margin-top: 150px;
@@ -13,6 +13,7 @@ display: flex;
 background: #5B695A;
 border-radius: 30px;
 justify-content: center;
+box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
 
 `
 
@@ -121,7 +122,34 @@ position: absolute;
 width: 141px;
 height: 40px;
 
-top: 490px;
+top: 550px;
 
 background: #D9D9D9;
 border-radius: 30px;`
+
+export const OptionDrop = styled.form`
+position: absolute;
+border-radius: 30px;
+height: 40px;
+
+top: 500px;
+
+`
+export const CompanyText = styled.text`
+position: absolute;
+
+
+
+top: 480px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`
