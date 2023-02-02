@@ -1,11 +1,11 @@
 import React from 'react'
-import {SignupContainer, SignupText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton, OptionDrop, CompanyText}  from '../styles/Signup.style'
+import {AuthContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton, OptionDrop, CompanyText}  from '../styles/AuthElements'
 
-function Signup() {
+function SignUp() {
   return (
-        <SignupContainer>
+        <AuthContainer>
           
-               <SignupText>Sign Up</SignupText> 
+               <AuthText>Sign Up</AuthText> 
                 <EmailText>Email: </EmailText>
                  <EmailInput></EmailInput>
 
@@ -23,8 +23,8 @@ function Signup() {
 
                 <SubmitButton>Register</SubmitButton>
             
-        </SignupContainer>
+        </AuthContainer>
   )
 }
 
-export default Signup;
+export default SignUp;

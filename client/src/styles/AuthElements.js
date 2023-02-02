@@ -1,22 +1,22 @@
 import styled from 'styled-components';
 
-export const SignupContainer = styled.div`
+export const AuthContainer = styled.div`
 
-margin: auto;
-width: 323px;
-height: 353px;
-left: 473px;
-top: 218px;
-margin-top: 150px;
+    margin: auto;
+    width: 323px;
+    height: 353px;
+    left: 473px;
+    top: 218px;
+    margin-top: 150px;
 
-display: flex;
-background: #5B695A;
-border-radius: 30px;
-justify-content: center;
+    display: flex;
+    background: #5B695A;
+    border-radius: 30px;
+    justify-content: center;
 
 `;
 
-export const SignupText = styled.div`
+export const AuthText = styled.div`
     text-decoration: none;
     display: flex;
     margin-top: 20px;
@@ -88,6 +88,7 @@ export const PasswordText = styled.text`
     mix-blend-mode: normal;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
+
 export const PasswordInput = styled.input`
     border-radius: 20px;
 
@@ -114,7 +115,7 @@ export const SubmitButton = styled.button`
     width: 141px;
     height: 40px;
 
-top: 490px;
+    top: 490px;
 
     background: #D9D9D9;
     border-radius: 30px;
@@ -135,9 +136,9 @@ export const OptionDrop = styled.form`
     position: absolute;
     border-radius: 30px;
     height: 40px;
-
     top: 500px;
 `;
+
 export const CompanyText = styled.text`
     position: absolute;
 

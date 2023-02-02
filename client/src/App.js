@@ -1,5 +1,4 @@
-import './App.css';
-import Signup from './components/Signup';
+import SignUp from './components/SignUp';
 import Login from './components/Login';
 import { Routes, Route, Router } from "react-router-dom";
 import { Component } from 'react';
@@ -13,13 +12,13 @@ function App() {
     <>
        <Navbar/>
           <Routes>
-            <Route path="/signup" element={<Signup/>}/>
+            <Route path="/signup" element={<SignUp/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/studentportal" element={<StudentPortal/>}/>
             <Route path="/companyportal" element={<CompanyPortal/>}/>
           </Routes>
    </>
-  );
-}
+  );  // <--- return() ends here
+} // <--- App() function ends here
 
 export default App;

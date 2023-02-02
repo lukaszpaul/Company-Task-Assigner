@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
-
-
 export const NavbarContainer = styled.nav`
     width: 100%;
     height: 80px;
@@ -17,7 +15,6 @@ export const LeftContainer = styled.div`
     display: flex;
     align-items: center;
     padding-left: 5%;
-    
 `;
 
 export const RightContainer = styled.div`
@@ -25,63 +22,62 @@ export const RightContainer = styled.div`
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
-    
 `;
 
 export const NavbarInnerContainer = styled.div`
-width: 100%;
-height: 80px;
-display: flex;
-`
+    width: 100%;
+    height: 80px;
+    display: flex;
+`;
 
 export const NavbarExtendedContainer = styled.div`
-`
+`;
 export const NavbarLinkContainer = styled.div`
-display: flex;
-`
-export const NavbarLink = styled(Link)`
-text-decoration: none;
-margin-left: 5px;
+    display: flex;
+`;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-color: #FFFFFF;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-`
+export const NavbarLink = styled(Link)`
+    text-decoration: none;
+    margin-left: 5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`;
 
 export const NavbarLinkRight = styled(Link)`
-text-decoration: none;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: 30px;
+`;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-color: #FFFFFF;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-margin-left: 5px;
-margin-right: 15px;
-margin-top: 30px;
-`
 export const Logo = styled.img`
-margin: 10;
-max-width: 240px;
-height: auto;
-border: 0;
-`
+    margin: 10;
+    max-width: 240px;
+    height: auto;
+    border: 0;
+`;
 
 export const NavbarLinkPortal = styled(Link)`
-text-decoration: none;
-margin-left: 5px;
-margin-right: 15px;
-margin-top: 20px;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: 20px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-color: #FFFFFF;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-`
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`;
