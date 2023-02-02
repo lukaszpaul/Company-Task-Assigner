@@ -1,5 +1,5 @@
 import React from 'react'
-import {AuthContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton, OptionDrop, CompanyText}  from '../styles/AuthElements'
+import {AuthContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton2, OptionDrop, CompanyText}  from '../styles/AuthElements'
 
 
 function Login() {
@@ -14,16 +14,9 @@ function Login() {
                  <PasswordText>Password:</PasswordText>
                  <PasswordInput></PasswordInput>
                 
-                <CompanyText>Company / Student</CompanyText>
-                <OptionDrop name='id'>
-                    <select name='ddlselect'>
-                        <option>Choose Type</option>
-                        <option value="company">Company</option>
-                        <option value="student">Student</option>
-                    </select>
-                </OptionDrop>
+                
 
-                <SubmitButton>Sign In</SubmitButton>
+                <SubmitButton2>Sign In</SubmitButton2>
             
         </AuthContainer>
   )

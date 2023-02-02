@@ -171,3 +171,25 @@ export const CompanyText = styled.text`
     mix-blend-mode: normal;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
+
+export const SubmitButton2 = styled.button`
+    position: absolute;
+    width: 141px;
+    height: 40px;
+
+    top: 490px;
+
+    background: #D9D9D9;
+    border-radius: 30px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: -2px 3px 30px 1px rgba(0,0,0,0.46);
+        -webkit-box-shadow: -2px 3px 30px 1px rgba(0,0,0,0.46);
+        -moz-box-shadow: -2px 3px 30px 1px rgba(0,0,0,0.46);
+    }
+`;
