@@ -1,9 +1,9 @@
 import React from 'react'
-import {AuthContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton, OptionDrop, CompanyText}  from '../styles/AuthElements'
+import {SignupContainer, AuthContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton, OptionDrop, CompanyText}  from '../styles/AuthElements'
 
 function SignUp() {
   return (
-        <AuthContainer>
+        <SignupContainer>
           
                <AuthText>Sign Up</AuthText> 
                 <EmailText>Email: </EmailText>
@@ -23,7 +23,7 @@ function SignUp() {
 
                 <SubmitButton>Register</SubmitButton>
             
-        </AuthContainer>
+        </SignupContainer>
   )
 }
 

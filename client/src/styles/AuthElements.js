@@ -15,6 +15,22 @@ export const AuthContainer = styled.div`
     justify-content: center;
 
 `;
+export const SignupContainer = styled.div`
+
+margin: auto;
+width: 323px;
+height: 353px;
+height: 390px;
+left: 473px;
+top: 218px;
+margin-top: 150px;
+
+display: flex;
+background: #5B695A;
+border-radius: 30px;
+justify-content: center;
+box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+`;
 
 export const AuthText = styled.div`
     text-decoration: none;
@@ -115,7 +131,7 @@ export const SubmitButton = styled.button`
     width: 141px;
     height: 40px;
 
-    top: 490px;
+    top: 540px;
 
     background: #D9D9D9;
     border-radius: 30px;
