@@ -52,7 +52,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 export const EmailInput = styled.input`
 border-radius: 20px;
-
+padding-left: 8px;
 position: absolute;
 width: 240px;
 height: 33px;
@@ -103,7 +103,7 @@ position: absolute;
 width: 240px;
 height: 33px;
 top: 420px;
-
+padding-left: 8px;
 
 font-family: 'Inter';
 font-style: normal;
