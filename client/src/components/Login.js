@@ -3,7 +3,7 @@
 import React, {useState} from 'react'
 import {useNavigate} from 'react-router-dom';
 import {AuthContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton2}  from '../styles/AuthElements'
-import { SignInUser } from '../firebaseConfig';
+// import { SignInUser } from '../firebaseConfig';
 
 function Login() {
 
@@ -31,7 +31,7 @@ function Login() {
                   onChange={(e) => setPassword(e.target.value)}/>
                 
                 <SubmitButton2 onClick={() => {
-                  SignInUser(email, password);
+                  // SignInUser(email, password);
                   navigate('/studentportal')
                 }}  // <--- onClick() ends here
                 >  

@@ -3,34 +3,51 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SignupContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton, OptionDrop, CompanyText } from '../styles/AuthElements';
-import { SignUpUser, checkIfEmailExists } from '../firebaseConfig';
+// import { SignUpUser, checkIfEmailExists} from '../firebaseConfig';
+import { UserAuth } from '../context/AuthContext'
 
-function SignUp() {
+const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-
+  const { createUser } = UserAuth();
   const navigate = useNavigate();
 
-  const handleSignUp = async () => {
-    if (!email || !password) {
-      setError('Please enter both an email and a password.');
-      return;
-    }
 
-    const emailExists = await checkIfEmailExists(email);
-    if (emailExists) {
-      setError('Email already exists, please use a different email address.');
-      return;
-    } // <--- emailExists() function ends here
+  // const navigate = useNavigate();
+
+  const handleSignUp = async (e) => {
+
+    // if (!email || !password) {
+    //   setError('Please enter both an email and a password.');
+    //   return;
+    // }
+
+    // e.preventDefault();
+    // setError('');
+
+    e.preventDefault();
+    setError('');
 
     try {
-      await SignUpUser(email, password);
-      navigate('/login');
-    } catch (error) {
-      console.error(error);
-      setError('Error occurred while signing up. Please try again later.');
+      await createUser(email, password);
+      console.log(`User ${email} was created`);
+      navigate('/login')
+      alert("ALL SET! \nPlease Login to your new account")
+    } catch(error) {
+      alert(error.message);
+      console.log(error.message)
     }
+
+
+
+    // try {
+    //   await createUser(email, password);
+    //   navigate('/studentportal');
+    // } catch (error) {
+    //   console.error(error);
+    //   setError('Error occurred while signing up. Please try again later.');
+    // }
 
   }; // <--- handSignUp() function ends here
 
@@ -54,13 +71,6 @@ function SignUp() {
       />
 
       <CompanyText>Company / Student</CompanyText>
-      <OptionDrop name="id">
-        <select name="ddlselect">
-          <option>Choose Type</option>
-          <option value="company">Company</option>
-          <option value="student">Student</option>
-        </select>
-      </OptionDrop>
 
       {error && <div style={{ color: 'red' }}>{error}</div>}
 
@@ -72,16 +82,10 @@ function SignUp() {
 export default SignUp;
 
 
-
-
-
-
-
-
 // import React, {useState} from 'react'
 // import {useNavigate} from 'react-router-dom';
 // import {SignupContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton, OptionDrop, CompanyText}  from '../styles/AuthElements'
-// import { SignUpUser, checkIfEmailExists } from '../firebaseConfig';
+// import { SignUpUser} from '../firebaseConfig';
 
 // function SignUp () {
 
@@ -91,6 +95,7 @@ export default SignUp;
 //   const navigate = useNavigate();
 
 //   return (
+//     <>
 //         <SignupContainer>
         
 //                <AuthText>Sign Up</AuthText> 
@@ -110,13 +115,7 @@ export default SignUp;
 //                   onChange={(e) => setPassword(e.target.value)} />
                 
 //                 <CompanyText>Company / Student</CompanyText>
-//                 <OptionDrop name='id'>
-//                     <select name='ddlselect'>
-//                         <option>Choose Type</option>
-//                         <option value="company">Company</option>
-//                         <option value="student">Student</option>
-//                     </select>
-//                 </OptionDrop>
+
 
 //                 <SubmitButton onClick={async () => {
 //                   await SignUpUser(email, password);
@@ -125,7 +124,7 @@ export default SignUp;
 //                   Register
 //                 </SubmitButton>
             
-//         </SignupContainer>
+//         </SignupContainer></>
 //   )
 // } // <--- SignUp() function ends here
 
