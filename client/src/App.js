@@ -1,7 +1,7 @@
 import SignUp from './components/Signup';
 import Login from './components/Login';
-import { Routes, Route, Router } from "react-router-dom";
-import { Component } from 'react';
+import { Routes, Route} from "react-router-dom";
+// import { Component } from 'react';
 import Navbar from './components/Navbar';
 import StudentPortal from './components/StudentPortal';
 import CompanyPortal from './components/CompanyPortal';
@@ -11,8 +11,6 @@ function App() {
   return (
     <>
        <Navbar/>
-
-       
           <Routes>
           <Route path="/" element={<Landing/>}/>
             <Route path="/signup" element={<SignUp/>}/>
