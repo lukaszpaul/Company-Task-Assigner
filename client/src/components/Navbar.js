@@ -18,8 +18,8 @@ function Navbar() {
                     <Logo src={LogoImage}></Logo>
                     </NavbarLink>
 
-                    <NavbarLinkPortal to="/companyportal">Company Portal</NavbarLinkPortal>
-                    <NavbarLinkPortal to="/studentportal">Student Portal</NavbarLinkPortal>
+                    
+                    
                     </NavbarLinkContainer>
             </LeftContainer>
 
