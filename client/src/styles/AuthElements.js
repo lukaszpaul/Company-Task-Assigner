@@ -193,20 +193,3 @@ export const SubmitButton2 = styled.button`
         -moz-box-shadow: -2px 3px 30px 1px rgba(0,0,0,0.46);
     }
 `;
-
-export const LandingLogo = styled.img`
-    margin: 10;
-    max-width: 700px;
-    height: auto;
-    border: 0;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-`;
-
-export const LogoContainer = styled.div`
-align-items: center;
-justify-content: center;
-align-self: center;
-display: flex;
-`;
