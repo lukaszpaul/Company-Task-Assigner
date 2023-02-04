@@ -61,6 +61,27 @@ export const NavbarLinkRight = styled(Link)`
     margin-top: 30px;
 `;
 
+export const LogoutButton = styled.button`
+    position: absolute;
+    width: 141px;
+    height: 40px;
+top: 30px;
+    right: 50px;
+    background: #D9D9D9;
+    border-radius: 30px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: -2px 3px 30px 1px rgba(0,0,0,0.46);
+        -webkit-box-shadow: -2px 3px 30px 1px rgba(0,0,0,0.46);
+        -moz-box-shadow: -2px 3px 30px 1px rgba(0,0,0,0.46);
+    }
+    `
+
 export const Logo = styled.img`
     margin: 10;
     max-width: 240px;

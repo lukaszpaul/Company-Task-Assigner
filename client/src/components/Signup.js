@@ -10,6 +10,11 @@ import {
   useNavigate 
 } from "react-router-dom";
 
+export const useAuthToken = () => {
+  const [authToken, setAuthToken] = useState(null);
+
+  return authToken;
+};
 
 
 function SignUp() {

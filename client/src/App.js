@@ -1,22 +1,22 @@
 import SignUp from './components/Signup';
 import Login from './components/Login';
-import { Routes, Route, Router } from "react-router-dom";
-import { Component } from 'react';
+import { Routes, Route} from "react-router-dom";
+// import { Component } from 'react';
 import Navbar from './components/Navbar';
 import CompanyPortal from './components/CompanyPortal';
 import Landing from './components/Landing';
-
-
+import Portal from './components/Portal';
 
 function App() {
   return (
     <>
        <Navbar/>
           <Routes>
-            <Route path="/" element={<Landing/>}/>
+          <Route path="/" element={<Landing/>}/>
             <Route path="/signup" element={<SignUp/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/companyportal" element={<CompanyPortal/>}/>
+            <Route path="/portal" element={<Portal/>}/>
           </Routes>
    </>
   );  // <--- return() ends here
