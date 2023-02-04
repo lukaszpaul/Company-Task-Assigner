@@ -45,8 +45,6 @@ function Login() {
 
                  <PasswordText>Password:</PasswordText>
                  <PasswordInput id='password' type= "password" onChange={(e) => setPassword(e.target.value)}></PasswordInput>
-                
-                
 
                 <SubmitButton2 onClick={handleAction}>Sign In</SubmitButton2>
             
