@@ -1,4 +1,4 @@
-import React from 'react'
+      import React from 'react'
 import { LandingLogo, LogoContainer } from '../styles/AuthElements';
 import LogoImage2 from '../assets/pictask.png'
 

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { AuthContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton, OptionDrop, CompanyText, SubmitButton2}  from '../styles/AuthElements'
 import { useState } from 'react';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import { authentication } from '../firebase-config'
 import { app } from '../firebase-config';
 import {
   BrowserRouter as Router,
@@ -34,7 +35,7 @@ function SignUp() {
 
 
   const handleAction = () => {
-    const authentication = getAuth();
+    // const authentication = getAuth();
     
     createUserWithEmailAndPassword(authentication, email, password)
       .then((response) => {
