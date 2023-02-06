@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import {AuthContainer, AuthText, EmailInput, EmailText, PasswordInput, PasswordText, SubmitButton2, OptionDrop, CompanyText}  from '../styles/AuthElements'
 import { getAuth, signInWithEmailAndPassword} from 'firebase/auth'
 import { authentication } from '../firebase-config'
-import { app } from '../firebase-config';
+// import { app } from '../firebase-config';
 import {
   BrowserRouter as Router,
   Routes,

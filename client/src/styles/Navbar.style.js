@@ -8,7 +8,7 @@ export const NavbarContainer = styled.nav`
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #000000;
-    `;
+`;
 
 export const LeftContainer = styled.div`
     flex: 70%;
@@ -80,7 +80,7 @@ top: 30px;
         -webkit-box-shadow: -2px 3px 30px 1px rgba(0,0,0,0.46);
         -moz-box-shadow: -2px 3px 30px 1px rgba(0,0,0,0.46);
     }
-    `
+`;
 
 export const Logo = styled.img`
     margin: 10;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 // import {CompanyPortalBanner} from '../styles/CompanyElements'
-import { app } from '../firebase-config';
+// import { app } from '../firebase-config';
 
 function CompanyPortal() {
   let navigate = useNavigate()
@@ -20,8 +20,6 @@ function CompanyPortal() {
        // temporary so logout button updates
     }
   }, []);
-
- 
 }
 
 export default CompanyPortal;

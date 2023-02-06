@@ -4,9 +4,9 @@ import React, { useEffect, useState } from 'react'
 import {Banner, TaskForm, TskFrmLabel, CreateTaskButton, TaskCard, DueDate, AssignedBy, Description, TskSpan, PendingTasksContainer, CompleteTaskButton, SubmissionInputLink} from '../styles/PortalElements'
 import { authentication, db } from '../firebase-config';
 import {collection, getDocs, addDoc, doc, deleteDoc }  from 'firebase/firestore';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 
 
 function Portal() {

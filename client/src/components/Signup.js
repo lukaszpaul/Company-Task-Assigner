@@ -3,7 +3,7 @@ import { AuthContainer, AuthText, EmailInput, EmailText, PasswordInput, Password
 import { useState } from 'react';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 import { authentication } from '../firebase-config'
-import { app } from '../firebase-config';
+// import { app } from '../firebase-config';
 import {
   BrowserRouter as Router,
   Routes,

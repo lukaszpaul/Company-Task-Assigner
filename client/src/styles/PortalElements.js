@@ -45,71 +45,14 @@ export const CreateTaskButton = styled.button`
   }
 `;
 
-// const Row = styled.div`
-//   display: flex;
-//   align-items: center;
-//   margin-bottom: 20px;
-// `;
 
 // =================== Pending Tasks Elements =================== \\
 
-// export const PendingTasksContainer = styled.div `
-//     display: grid;
-//     place-items: center;
-// `;
-
-// export const TaskCard = styled.div`
-//   position: absolute;
-//   width: 2000px;
-//   height: 103px;
-//   background: #D9D9D9;
-//   border-radius: 25px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-// `;
-
-// export const DueDate = styled.h3`
-//   width: 170px;
-//   height: 49px;
-//   font-family: "Inter";
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 20px;
-//   line-height: 24px;
-//   color: #000000;
-//   text-align: right;
-// `;
-
-// export const AssignedBy = styled.h3`
-//   width: 531px;
-//   height: 29px;
-//   font-family: "Inter";
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 20px;
-//   line-height: 24px;
-//   color: #000000;
-// `;
-
-// export const Description = styled.p`
-//   width: 1304px;
-//   height: 58px;
-//   font-family: "Inter";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 24px;
-//   color: #000000;
-// `;
 
 export const TskSpan = styled.span `
     font-weight: bold;
     text-decoration: underline;
 `;
-
-
-// Original
 
 export const PendingTasksContainer = styled.div`
   display: grid;
@@ -117,7 +60,6 @@ export const PendingTasksContainer = styled.div`
   grid-gap: 5%;
   place-items: center;
 `;
-
 
 export const TaskCard = styled.div`
   width: 710px;

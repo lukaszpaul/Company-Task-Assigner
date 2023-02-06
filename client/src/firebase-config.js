@@ -23,16 +23,6 @@ const firebaseConfig = {
   measurementId: "G-703MF44RLG"
 };
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCavIJm1-9Gcyn-MF3Jd5FHBglHz8Ka3kY",
-//   authDomain: "task-assigner-71720.firebaseapp.com",
-//   projectId: "task-assigner-71720",
-//   storageBucket: "task-assigner-71720.appspot.com",
-//   messagingSenderId: "977042785081",
-//   appId: "1:977042785081:web:95c7282b4b10da57411ee8",
-//   measurementId: "G-XT9L64WCRD",
-// };
-
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const authentication = getAuth(app);
